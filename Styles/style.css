@@ -1,0 +1,132 @@
+:root{
+    --primary-color: #334E61;
+    --secondary-color: #eeac1f;
+    --tertiary-color: hsl(0, 5%, 84%);
+    --cor-hover: #042d4b;
+
+    --primary-font: 'DM Serif Display', serif;
+    --secondary-font: 'Ink Free Regular', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
+
+.header {
+    padding: 3% 0% 0% 13%; 
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+
+.header__menu__links {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 1,37rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.presentation{
+    padding: 8% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentation__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.objetive-Highlight {
+    color: var(--secondary-color);
+}
+
+.presentation__content__introduction {
+    font-size: 2.87rem;
+    font-family: var(--primary-font);
+}
+
+.presentation__content__introduction__paragraph {
+    font-size: 2,25rem;
+    font-family: var(--secondary-font);
+}
+
+.presentation__links__subititle {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 1,75rem;
+}
+
+.presentation__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentation__links__design {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 3px solid var(--secondary-color);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1,75rem;
+    padding: 19px 0;
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-family: var(--primary-font);
+}
+
+.presentation__links__design:hover {
+    background-color: var(--cor-hover);
+}
+
+.presentatiton__img {
+    width: 50%;
+}
+
+.footer {
+    padding: 24px;
+    color: var(--tertiary-color);
+    background-color: var(--cor-hover);
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1,5rem;
+    font-weight: 400px;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentation__content {
+        width: auto;
+    }
+}
